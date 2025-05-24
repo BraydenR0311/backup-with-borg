@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup files using Borg
+
+[Service]
+Type=oneshot
+ExecStart=/home/brayden/.local/bin/backup.sh
+
+[Install]
+WantedBy=default.target

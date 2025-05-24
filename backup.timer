@@ -1,0 +1,10 @@
+[Unit]
+Description=Run borg backup daily
+
+[Timer]
+Unit=backup.service
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
