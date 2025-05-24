@@ -2,6 +2,8 @@
 
 set -e
 
+mkdir $HOME/.backups
+
 sudo cp -v ./backup.sh $HOME/.local/bin/
 sudo chmod u+x $HOME/.local/bin/backup.sh
 
